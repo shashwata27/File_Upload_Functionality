@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>File Upload Functionality</title>
+  </head>
+  <body>
+    <h1>File Upload Functionality</h1>
+    <form
+      class="container"
+      action="https://formspree.io/f/mvodzonn"
+      method="POST"
+    >
+      <div class="inputs">
+        <label for="email">Email</label>
+        <input type="email" name="User Email" id="email" placeholder="Email" />
+
+        <label for="file">Upload File</label>
+        <input
+          type="file"
+          name="Files"
+          id="file"
+          accept=".txt, .pdf, .csv, application/vnd.ms-excel"
+          multiple
+        />
+      </div>
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
